@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+
+@-moz-keyframes appear {
+    from {
+        margin-right: 100%; 
+        width: 300%
+    }
+    to {
+        margin-right: 0%; 
+        width: 100%;
+    }
+}
+
+@-webkit-keyframes appear {
+    from {
+        margin-right: 100%; 
+        width: 300%
+    }
+    to {
+        margin-right: 0%; 
+        width: 100%;
+    }
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Steph', sans-serif;
+    background-color: rgb(95, 158, 160);
+}
+
+nav {
+    background-color: rgb(50, 92, 121);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3.125rem;
+    height: 5rem;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+}
+
+nav .left a {
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+nav .right a {
+    color: black;
+    font-size: 1.375rem;
+    margin: 0 0.625rem;
+}
+
+nav .right a:hover {
+    color: blue;
+    transition: color 0.3s ease-in-out;
+}
+
+section {
+    padding: 8rem 2rem;
+    min-height: 80vh;
+    display: flex;
+}
+
+section h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+    position: relative;
+    -moz-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    -moz-animation-name: appear;
+    animation-name: appear;
+    -webkit-animation-name: appear;
+}
+
+
+#about-section {
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8rem 2rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+}
+
+#about-section .headshot {
+    width: 20rem;
+    height: 20rem;
+    border-style: double;
+    overflow: hidden;
+    margin-top: 2rem;
+    margin-bottom: 52px;
+    border-radius: 50%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#about-section .headshot img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+#about-section .headshot img:hover {
+    transform: scale(1.6);
+}
+
+#about-section .bio p {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+#about-section .bio {
+    margin-bottom: 2rem;
+    padding: 0 2rem;
+    max-width: 56.25rem;
+}
+
+#projects-section {
+    justify-content: center;
+}
