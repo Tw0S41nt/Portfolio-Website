@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;  
+  
 }
 
 @-moz-keyframes appear {
@@ -134,5 +135,102 @@ section h2 {
 }
 
 #projects-section {
-    justify-content: center;
+    text-decoration: none;
+    width: 100%;
+    margin: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+}
+
+#projects-section h2 {
+    text-decoration: none;
+    margin-bottom: 1rem;
+    font-size: 2.75rem;
+    font-weight: 700;
+}
+
+#projects-section h3 {
+    text-decoration: none;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.project-subsection {
+    width: 100%;
+    margin-bottom: 4rem; /* Add space between subsections */
+}
+
+.projects-scroll-container {
+    text-decoration: none;
+    display: flex;
+    gap: 1.5rem;
+    padding: 1rem;
+    width: 100%;
+    max-width: 1600px;
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
+    margin: 0 auto;
+}
+
+
+.project-box {
+    text-decoration: none;
+    flex: 0 0 16rem; /* Fixed width for the boxes */
+    text-align: center;
+    border: 1px solid rgb(50, 92, 121);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background-color: rgb(50, 92, 121);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for scaling */
+}
+
+.project-box:hover {
+    transform: scale(0.95); /* Grow the box slightly on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.project-box img {
+    width: 100%;
+    height: 12rem;
+    object-fit: cover;
+    border-radius: 0.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.project-box h4 {
+    color: white;
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.project-box h5 {
+    color: white;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.project-box p {
+    color: white;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.swiper-slide {
+    width: 272px !important;
+    height: 375.75px;
+}
+
+.swiper-slide > a {
+    display: block;
+    transform: scale(0.9);
+    width: 272px;
+    height: 375.75px;
 }
