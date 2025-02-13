@@ -69,7 +69,6 @@ nav .right a:hover {
 }
 
 section {
-    padding: 8rem 2rem;
     min-height: 80vh;
     display: flex;
 }
@@ -90,10 +89,10 @@ section h2 {
 
 
 #about-section {
-    min-height: 100vh;
+    min-height: auto;
     flex-direction: column;
     justify-content: center;
-    padding: 8rem 2rem;
+    padding: 5rem 2rem;
     display: flex;
     align-items: center;
     text-align: center;
@@ -129,9 +128,14 @@ section h2 {
 }
 
 #about-section .bio {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     padding: 0 2rem;
     max-width: 56.25rem;
+}
+
+#about-section .social-links i {
+    font-weight: 500;
+    color: rgb(50, 92, 121);
 }
 
 #projects-section {
